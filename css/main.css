@@ -533,6 +533,39 @@ img{
 
 /* ====== end about me ======= */
 
+/* skills */
+.my_skills .container{
+    flex-direction: column;
+    padding: 20px 20px;
+    height: 100vh;
+    min-height: 80vh;
+    width: 100%;
+    display:flex;
+    align-items: stretch;
+    justify-content: left;
+}
+.my_skills .progress .tichn h3{
+    color: #0b5596;
+}
+.my_skills .progress .tichn div{
+    background-color: #F3F3F3;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 12px 4px #0000004f;
+
+}
+.my_skills .progress .tichn div span{
+    background-color: crimson;
+    height: 100%;
+    display: block;
+    line-height: 25px;
+    color:white;
+    text-align: right;
+    font-weight: bold;
+    border-radius: 10px;
+}
+/* end skills */
+
 /* ======= contact ======== */
 #contact{
     border-bottom: 1px solid crimson;
@@ -683,6 +716,20 @@ img{
 }
 /* animation text */
 
+/* media query for small phone */
+@media only screen and (max-width: 380px) {
+    .my_skills .container{
+        flex-direction: column;
+        padding: 20px 20px;
+        height: 120vh;
+        min-height: 80vh;
+        width: 100%;
+        display:flex;
+        align-items: stretch;
+        justify-content: left;
+    }
+}
+/* end media query for small phone */
 /* ======== media query for Tablet ======== */
 @media only screen and (min-width: 768px) {
 	.cta {
@@ -733,6 +780,9 @@ img{
         height: 100%;
     }
     /* End Project */
+    .my_skills .progress .tichn{
+        margin: 30px 50px;
+    }
     
     /* about */
     #about {
