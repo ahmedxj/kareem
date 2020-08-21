@@ -547,19 +547,19 @@ img{
 .my_skills .progress .tichn h3{
     color: #0b5596;
 }
-.my_skills .progress .tichn div{
-    background-color: #F3F3F3;
-    height: 25px;
-    border-radius: 10px;
-    box-shadow: -1px 0px 12px 4px #0000004f;
-
-}
 .my_skills .container p{
     visibility: hidden;
     text-align: center;
     max-width: 1000px; 
     margin:50px 30px; 
     font-weight:500 ;   
+}
+.my_skills .progress .tichn div{
+    background-color: #F3F3F3;
+    height: 25px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 12px 4px #0000004f;
+
 }
 .my_skills .progress .tichn div span{
     background-color: crimson;
@@ -893,7 +893,7 @@ img{
         max-width: 900px;
         margin:0 auto;
     }
-	    .my_skills .container p{
+    .my_skills .container p{
         align-items: center;
         display: flex;
         justify-content: center;
