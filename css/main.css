@@ -548,11 +548,7 @@ img{
     color: #0b5596;
 }
 .my_skills .container p{
-    visibility: hidden;
-    text-align: center;
-    max-width: 1000px; 
-    margin:50px 30px; 
-    font-weight:500 ;   
+    visibility: hidden;  
 }
 .my_skills .progress .tichn div{
     background-color: #F3F3F3;
