@@ -554,6 +554,13 @@ img{
     box-shadow: -1px 0px 12px 4px #0000004f;
 
 }
+.my_skills .container p{
+    visibility: hidden;
+    text-align: center;
+    max-width: 1000px; 
+    margin:50px 30px; 
+    font-weight:500 ;   
+}
 .my_skills .progress .tichn div span{
     background-color: crimson;
     height: 100%;
@@ -886,5 +893,13 @@ img{
         max-width: 900px;
         margin:0 auto;
     }
+	    .my_skills .container p{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+       visibility: visible;
+       text-align: center;
+       font-weight: 600;
+    } 
 }
 /* ======== end media query for desktop ====== */
