@@ -537,7 +537,7 @@ img{
 .my_skills .container{
     flex-direction: column;
     padding: 20px 20px;
-    height: 100vh;
+    /* height: 100vh;  ========= removit ========= */
     min-height: 80vh;
     width: 100%;
     display:flex;
@@ -548,9 +548,19 @@ img{
     color: #0b5596;
 }
 .my_skills .container p{
-    visibility: hidden;  
+    /* visibility: hidden; */
+    text-align: center;
+    max-width: 1000px; 
+    margin:50px 30px; 
+    font-weight:500 ;  
 }
-.my_skills .progress .tichn div{
+.my_skills .progress {  /* ==========  add this part ============= */
+    border-radius: 10px;
+    box-shadow: -2px 0px 9px 2px #00000044;
+    padding: 12px;
+	padding-bottom: 30px;
+}
+/* .my_skills .progress .tichn div{
     background-color: #F3F3F3;
     height: 25px;
     border-radius: 10px;
@@ -566,7 +576,27 @@ img{
     text-align: right;
     font-weight: bold;
     border-radius: 10px;
+} */
+
+.my_skills .progress .tichn div span {
+    font-size: 12px;
+    background-color: crimson;
+    height: 100%;
+    display: block;
+    line-height: 18px;
+    color: white;
+    text-align: right;
+    font-weight: bold;
+    border-radius: 10px;
 }
+
+.my_skills .progress .tichn div{
+	background-color: #F3F3F3;
+    height: 16px;
+    border-radius: 10px;
+    box-shadow: -1px 0px 12px 4px #0000004f;
+}
+
 /* end skills */
 
 /* ======= contact ======== */
@@ -625,7 +655,6 @@ img{
 #footer {
     background-image: url(../img/04.jpg);
     background-size: cover;
-    /* background-image: linear-gradient(60deg, #29323c 0%, #485563 100%); */
 }
 #footer .contianer{
     min-height: 200px;
@@ -846,6 +875,24 @@ img{
         margin:20px;
         /* flex-direction: row;    <===== add this to disktop ===== */
     }
+    .my_skills .progress .tichn div{
+        background-color: #F3F3F3;
+        height: 25px;
+        border-radius: 10px;
+        box-shadow: -1px 0px 12px 4px #0000004f;
+    
+    }
+    .my_skills .progress .tichn div span{
+        background-color: crimson;
+        height: 100%;
+        display: block;
+        line-height: 25px;
+        color:white;
+        text-align: right;
+        font-weight: bold;
+        border-radius: 10px;
+        font-size: 16px;
+    }
     /* End contact */
 }
 /* ======== end media query for Tablet ====== */
@@ -897,5 +944,11 @@ img{
        text-align: center;
        font-weight: 600;
     } 
+    .my_skills .progress {  /* ==========  add this part ============= */
+        border-radius: 10px;
+        box-shadow: -2px 0px 9px 2px #0000005c;
+        padding: 16px;
+    }
+
 }
 /* ======== end media query for desktop ====== */
