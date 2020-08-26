@@ -133,7 +133,8 @@ img{
 	color: white;
 	text-transform: uppercase;
 	padding: 20px;
-	display: block;
+    display: block;
+    transition: .5s ease;
 }
 #header .nav-list ul a::after {
 	content: attr(data-after);
@@ -548,7 +549,7 @@ img{
     color: #0b5596;
 }
 .my_skills .container p{
-    visibility: hidden; 
+    visibility: hidden;
     text-align: center;
     max-width: 1000px; 
     margin:50px 30px; 
@@ -760,6 +761,9 @@ img{
         align-items: stretch;
         justify-content: left;
     }
+    #slider .container .intro{
+        margin-left: -31px;
+    }
 }
 /* end media query for small phone */
 /* ======== media query for Tablet ======== */
@@ -949,6 +953,15 @@ img{
         box-shadow: -2px 0px 9px 2px #0000005c;
         padding: 16px;
     }
-
+    #header .nav-list ul li:hover a {
+        background-color: rgb(192, 32, 64);
+        color: black;
+        border-radius: 10px;
+        padding: 12px 20px;
+        font-weight: 600;
+        box-shadow: 0px 0px 8px 4px #888484a1;
+        transition: .3s ease;
+       
+    }
 }
 /* ======== end media query for desktop ====== */
