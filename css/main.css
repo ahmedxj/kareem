@@ -11,6 +11,9 @@ html{
     scroll-behavior: smooth;
 }
 /* ======= my frame work ======== */
+.container,.contianer{
+    overflow: hidden;
+}
 ul{
     list-style: none;
 }
