@@ -10,6 +10,11 @@
 html{
     scroll-behavior: smooth;
 }
+body{
+    background-image: url(../img/1552.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+}
 /* ======= my frame work ======== */
 .container,.contianer{
     overflow: hidden;
@@ -40,13 +45,14 @@ img{
 }
 .title{
     font-size:3rem;
-    color: black;
+    color: rgb(255, 255, 255);
     font-weight: 300;
     margin-bottom:10px ;
     text-transform:uppercase;
     letter-spacing: .2rem;
     text-align: center;
-    text-shadow: -6px 7px 7px #00000094;
+    /* text-shadow: -6px 7px 7px #ffffffc9; */
+    text-shadow: -2px 2px 8px #ffffffe6;
 }
 .title span{
     color: crimson;
@@ -93,6 +99,7 @@ img{
 	top: 0;
 	width: 100vw;
 	height: auto;
+	/*border-bottom: 1px solid red*/
 }
 #header .header {
     min-height: 8vh;
@@ -216,7 +223,7 @@ img{
 
 /* ===== slider ===== */
 #slider{
-    background-image: url(../img/01.jpg);
+    background-image: url(../img/01z.jpg);
     background-size: cover;
     background-position: top center;
     position: relative;
@@ -359,17 +366,20 @@ img{
 #services .service_bottom .services-items{
     flex-basis: 80%;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     flex-direction:column ;
     padding: 30px;
     border-radius: 10px;
     background-image: url(../img/3.jpg);
-    background-size: cover;
+    background-attachment: fixed;
+    background-size:cover ;
     margin: 10px 5%;
     position: relative;
     z-index: 1;
     color: white;
+    border: 1px solid rgba(255, 0, 0, 0.685);
+    text-align: center;
 }
 #services .service_bottom .services-items p{
     font-size: 1rem;
@@ -399,7 +409,13 @@ img{
     margin-bottom: 10px;
     text-transform: uppercase;
 }
-
+#services .services-items h3{
+    color:white;
+    letter-spacing: 2px;
+    background-color: #c02040;
+    border-radius: 5px;
+    padding: 5px 15px;
+}
 /* end Sevrises */
 
 /* projects */
@@ -446,6 +462,21 @@ img{
     font-weight: 300;
     margin-top:10px ;
     margin-bottom: 5px;
+}
+#projects .all-project .project-info .web-btn{
+    color: white;
+    border: 1px solid #c02040;
+    padding: 5px 30px;
+    /* background-color:#c02040; */
+    background-image: linear-gradient(60deg,#7c0a21 0%,#c02040 100%);
+    border-radius: 5px;
+    transition: .3s ease;
+}
+#projects .all-project .project-info .web-btn:hover{
+    color: red;
+    background-image: none;
+    transition: .3s ease;
+    border: 2px solid;
 }
 #projects .all-project .project-image{
     flex-basis: 50%;
@@ -526,6 +557,7 @@ img{
 #about .about-contianer .info p{
     margin-bottom: 20px;
     line-height: 25px;
+    font-weight: 600;
 }
 #about .about-contianer .info a{
     padding: 10px 20px;
@@ -560,9 +592,10 @@ img{
 }
 .my_skills .progress {  /* ==========  add this part ============= */
     border-radius: 10px;
-    box-shadow: -2px 0px 9px 2px #00000044;
+    box-shadow: -2px 0px 9px 2px #ffffff6c;
     padding: 12px;
-	padding-bottom: 30px;
+    padding-bottom: 30px;
+    background-color:  #ffffff73;
 }
 /* .my_skills .progress .tichn div{
     background-color: #F3F3F3;
@@ -630,9 +663,10 @@ img{
     justify-content: center;
     display:flex;
     align-items: center;
-    box-shadow: 1px 0px 20px 4px #0000002c;
+    box-shadow: 1px 0px 20px 4px #ddafaf9c;
     flex-direction: column;
     transition: .4s ease;
+    background-color: #ffffff96;
 }
 #contact .contianer .contact-items .items:hover{
    box-shadow: 0px 0px 10px 0px #0000002c;

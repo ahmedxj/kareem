@@ -12,8 +12,9 @@ document.addEventListener('scroll', () => {
 	var scroll_position = window.scrollY;
 	if (scroll_position > 250) {
 		header.style.backgroundImage = 'linear-gradient(181deg, #29323c 43%, #9097a0 152%)';
+		header.style.borderBottom='1px solid red' ;
 	} else {
-		header.style.backgroundColor = 'transparent';
+		header.style.backgroundColor = '#10345300';
 	}
 });
 
