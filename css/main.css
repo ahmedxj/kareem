@@ -85,6 +85,11 @@ img{
     text-transform: uppercase;
     color: white;
 }
+.brand h1:hover {
+    transform: scale(1.08,1.08);
+    box-shadow: 1px 3px 11px 5px #00000084;
+    transition: ease .3s;
+}
 .brand h1 span{
     color:crimson
 }
